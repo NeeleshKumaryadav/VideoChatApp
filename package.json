@@ -1,0 +1,17 @@
+{
+  "name": "meet-the-stranger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon app.js"
+  },
+  "author": "Neelesh kumar yadav",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^1.14.9",
+    "socket.io": "^4.7.1"
+  }
+}
