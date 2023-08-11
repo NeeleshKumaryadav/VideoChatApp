@@ -1,10 +1,13 @@
+import * as constants from "./constants.js";
+
 let state={
     socketId:null,
     localStream:null,
     remoteStream: null,
     screenSharingStream:null,
-    allowConnectionsFromStranger:false,
+    allowConnectionsFromStrangers:false,
     screenSharingActive:false,
+    callState: constants.callState.CALL_AVAILABLE_ONLY_CHAT,
 };
 
 export const setSocketId = (socketId)=>{
@@ -22,10 +25,10 @@ export const setLocalStream =(stream)=>{
     };
 };
 
-export const setAllowConnectionsFromStranger = (allowConnection) =>{
+export const setAllowConnectionsFromStrangers = (allowConnection) =>{
     state= {
         ...state,
-        allowConnectionsFromStranger: allowConnection
+        allowConnectionsFromStrangers: allowConnection
     };
 };
 
@@ -47,6 +50,13 @@ export const setRemoteStream =(stream) =>{
     state={
         ...state,
         remoteStream: stream,
+    };
+};
+
+export const setCallState = (callState) =>{
+    state = {
+        ...state,
+        callState,
     };
 };
 

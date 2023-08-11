@@ -29,7 +29,7 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "sans-serif";
 }
 
 .main_container {
@@ -52,12 +52,14 @@ body {
 
 .call_container {
   width: 50%;
-  height: 100%;
+  /* height: 100%; */
+  height: 110vh;
 }
 
 .messenger_container {
   width: 25%;
-  height: 100%;
+  /* height: 90%; */
+  height: 90vh;
   background: #f4f9fd;
   display: flex;
   flex-direction: column;
@@ -323,6 +325,7 @@ body {
 .remote_video {
   width: 100%;
   height: 100%;
+  /* height: 80vh; */
 }
 
 .call_buttons_container {
@@ -450,7 +453,7 @@ body {
   left: 0;
   top: 0;
   background: rgba(196, 196, 196, 0.2);
-  backdrop-filter: blur(80px);
+  background-filter: blur(80px);
 }
 
 .video_recording_buttons_container {
@@ -459,7 +462,7 @@ body {
   height: 50px;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  backdrop-filter: blur(60px);
+  background-filter: blur(60px);
   right: 20px;
   top: 20px;
   display: flex;
